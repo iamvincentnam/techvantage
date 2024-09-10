@@ -15,11 +15,11 @@
     display: grid;
     gap:20px 5px;
     grid-template-columns: repeat(4,1fr);
-    grid-auto-rows:200px ;
+    grid-auto-rows:250px ;
     font-family: merriweather;
     line-height: 1.7;
-    font-size: 15px;
-    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.323); */
+    
+   
 }
 .client-testimonials .card:nth-of-type(1){
     grid-column: 3/5;
@@ -37,17 +37,24 @@ grid-row:1;
     grid-column:1 ;
 }
 .client-testimonials .card{ 
+    background-image: url('../asset/IMG_3560.JPG');
+    background-repeat: no-repeat;
+                background-size:cover;
+                height:auto;
+                background-position:center; 
+
 position: relative;
-    background:none;
-    /* border-radius: 5px; */
-    padding: 20px 10px;
-    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.323); */
+text-transform: capitalize;
+    padding: 20px;
+  
    text-align:left;
-    color: #303030 !important;
-    border: 1px solid #303030;
+    color: #ffffff;
+   /* border-radius: 50%; */
 
 }
-.client-testimonials .card::after{
+
+
+/* .client-testimonials .card::after{
     content: '?';
     height: 25px;
     width: 25px;
@@ -64,7 +71,18 @@ font-size: 18px;
 border-radius:5px;
 background-color:rgba(199, 158, 56, 0.75);
 
-} 
+}  */
+.client-testimonials .card:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.767);
+    z-index: -1;
+    /* border-radius: 50%; */
+}
 .client-testimonials .card::-webkit-scrollbar {
     width:5px; /* Make the scrollbar thin */
 }
@@ -87,7 +105,8 @@ background-color:rgba(199, 158, 56, 0.75);
 .client-testimonials .card-header p {
  opacity: 50%;
  margin: 0;
-
+ font-size: .9rem;
+line-height: 1;
 
 }
 .client-testimonials .card-header .card-img{
@@ -102,7 +121,7 @@ margin-right: 10px;
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 20px;
-    font-family: raleway;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .client-testimonials .card_quote{
@@ -113,33 +132,11 @@ margin-right: 10px;
      
 }
 .client-testimonials .card-bg-purple{
-    /* background-color: #2e3830; */
-    /* background: hsl(263,55%, 52%); */
-    color: #dfdcb9;
-    background-image: url('assets/icons8-quotes-24.png');
+ 
     background-repeat: no-repeat;
-    background-position:top 10px right 100px;
+
 }
-.client-testimonials .card-bg-cyan{
-    /* background-color: #586c5c; */
-    color: #303030;
-}
-.client-testimonials .card-bg-black-blue{
-    /* background: hsl(219,29%, 14%); */
-    color: #303030;
-  
-}
-.client-testimonials .card-bg-gray-blue{
-    /* background: hsl(217,19%, 35%); */
-    color: #303030;
-    /* background-image: url('assets/icons8-quotes-24.png');
-    background-repeat: no-repeat;
-    background-position:top 10px right 100px; */
-}
-.client-testimonials .card-bg-gold{
-    /* background: rgb(119, 92, 24); */
-    /* color: #dfdcb9; */
-}
+
  
     @media(max-width:1200px){
         .client-testimonials{

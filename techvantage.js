@@ -1,7 +1,11 @@
 
-gsap.from('.anim1',{ duration:1, y:-20, ease: "ease"});
+gsap.from('.anim1',{ duration:1, x:-100, ease: "ease"});
 
-gsap.from('.hero_item', { duration:1,opacity:0, ease:  "power1.in"});
+gsap.from('.hero_item', { duration:1.5, 
+  opacity:0,
+   scale:0,
+    rotate:180,
+     ease:  "power1.in"});
 
 
 
@@ -43,12 +47,12 @@ gsap.from('.testimonials_div',{
   y:100,
   opacity:0,
   duration:.5,
-  stagger: .5,
+  stagger: .61,
   scrollTrigger: {
     trigger: '.testimonials_div', 
-    start: 'top 80%', 
+    start: 'top 90%', 
     end: 'bottom 50%', 
-    scrub:.2, 
+    // scrub:.2, 
   
   }
 })
@@ -66,9 +70,10 @@ gsap.from('.card',{
 })
 gsap.from('.our-clients',{
   x:-100,
+  rotate:-90,
   opacity:0,
   duration:1,
-  stagger: .50,
+  stagger: .60,
   scrollTrigger: {
     trigger: '.our-clients',
     start:"top 80%",
